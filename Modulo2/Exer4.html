@@ -9,40 +9,6 @@
     <div class="container">
       <ul id="name"></ul>
     </div>
-    <script>
-      var listElement = document.querySelector("#name");
-      var nomes = ["Diego", "Gabriel", "Lucas"];
-
-      for (var nome of nomes) {
-        var createItem = document.createElement("li");
-        var itemText = document.createTextNode(nome);
-        createItem.appendChild(itemText);
-        listElement.appendChild(createItem);
-      }
-      var divElement = document.querySelector(".container");
-      var createInput = document.createElement("input");
-      var createButton = document.createElement("button");
-
-      createInput.setAttribute("type", "text");
-      createInput.setAttribute("name", "nome");
-
-      createButton.setAttribute("onClick", "adicionar()");
-      var textButton = document.createTextNode("Adicionar");
-      createButton.appendChild(textButton);
-
-      divElement.appendChild(createInput);
-      divElement.appendChild(createButton);
-
-      function adicionar() {
-        var nome = document.querySelector("input");
-        nomes.push(nome.value);
-        var createItem = document.createElement("li");
-        var itemText = document.createTextNode(nome.value);
-        createItem.appendChild(itemText);
-        listElement.appendChild(createItem);
-
-        nome.value = "";
-      }
-    </script>
+    <script src="Exer4.js"></script>
   </body>
 </html>
